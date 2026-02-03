@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-terracotta: #D9885D;
+  --color-clay: #F4E9D7;
+  --color-olive: #A3B18A;
+  --color-charcoal: #2E2E2E;
+  --color-softwhite: #FAF8F4;
+
+  --font-serif: "Playfair Display", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-sans: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  @apply bg-softwhite text-charcoal antialiased;
+}
+
+.gradient-hero {
+  background: radial-gradient(circle at top left, rgba(217, 136, 93, 0.25), transparent 55%),
+    radial-gradient(circle at bottom right, rgba(163, 177, 138, 0.18), transparent 55%),
+    #FAF8F4;
+}
+
