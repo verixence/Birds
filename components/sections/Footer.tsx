@@ -7,22 +7,22 @@ export function Footer() {
   return (
     <footer
       id="contact-footer"
-      className="border-t border-black/5 bg-softwhite py-16 sm:py-20"
+      className="border-t border-black/5 bg-softwhite py-10 sm:py-14"
     >
       <motion.div
         initial={{ opacity: 0, y: 16 }}
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-80px" }}
         transition={{ duration: 0.7 }}
-        className="container flex flex-col items-center justify-center gap-6 text-center"
+        className="container flex flex-col items-center justify-center gap-4 text-center"
       >
-        <div className="relative h-12 w-12 overflow-hidden rounded-full border border-black/5 bg-clay">
+        <div className="relative h-28 w-28 flex-shrink-0 overflow-hidden rounded-full sm:h-30 sm:w-30">
           <Image
             src="/logo.png"
             alt="Ceramic Birds logo"
             fill
-            sizes="48px"
-            className="object-cover"
+            sizes="120px"
+            className="object-contain scale-150"
           />
         </div>
         <p className="font-serif text-xl sm:text-2xl text-charcoal">
